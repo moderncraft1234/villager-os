@@ -16,6 +16,7 @@ sudo pacman -Syy polybar -y
 sudo pacman -Syy plasma -y
 sudo pacman -Syy chromium -y
 sudo pacman -Syy konsole -y
+sudo pacman -Syy feh -y
 pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
 cd ~
