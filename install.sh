@@ -8,6 +8,9 @@ sudo pacman -Syy zsh
 sudo pacman -Syy networkmanager
 sudo pacman -Syy emacs
 sudo pacman -Syy nvim
+sudo pacman -Syy mc
+sudo pacman -Syy vim
+sudo pacman -Syy nvim
 
 pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
@@ -17,9 +20,16 @@ yay -Syyu
 yay -Syy chrome
 yay -Syy vagrant
 pacman -Syy plasma
+yay
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 sudo git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 yay -Syy feh
+mkdir ~/Pictures/random
+
+git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~.profile
+
+sudo systemctl start gdm
+nohup polybar &
 
 
 
