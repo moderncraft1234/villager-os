@@ -1,27 +1,27 @@
 #!/bin/bash
 sudo pacman -Syyu
-sudo pacman -Syy i3
-sudo pacman -Syy gdm
-sudo pacman -Syy dmenu
-sudo pacman -Syy ranger
-sudo pacman -Syy zsh
-sudo pacman -Syy networkmanager
-sudo pacman -Syy emacs
-sudo pacman -Syy nvim
-sudo pacman -Syy mc
-sudo pacman -Syy vim
-sudo pacman -Syy nvim
-sudo pacman -Syy gim
-sudo pacman -Syy polybar
+sudo pacman -Syy i3 -y
+sudo pacman -Syy gdm -y
+sudo pacman -Syy dmenu -y
+sudo pacman -Syy ranger -y
+sudo pacman -Syy zsh -y
+sudo pacman -Syy networkmanager -y
+sudo pacman -Syy emacs -y
+sudo pacman -Syy nvim -y
+sudo pacman -Syy mc -y
+sudo pacman -Syy vim -y
+sudo pacman -Syy nvim -y
+sudo pacman -Syy gim -y
+sudo pacman -Syy polybar -y
+sudo pacman -Syy plasma -y
+sudo pacman -Syy chromium -y
+sudo pacman -Syy konsole -y
 pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
 cd ~
 
-yay -Syyu
-yay -Syy chrome
-yay -Syy vagrant
-pacman -Syy plasma
-yay
+
+
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 sudo git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 yay -Syy feh
