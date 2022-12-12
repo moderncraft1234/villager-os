@@ -12,6 +12,7 @@ sudo pacman -Syy mc
 sudo pacman -Syy vim
 sudo pacman -Syy nvim
 sudo pacman -Syy gim
+sudo pacman -Syy polybar
 pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
 cd ~
@@ -35,5 +36,6 @@ git clone https://github.com/moderncraft1234/villager-os/tree/main/random
 sudo systemctl enable gdm
 sudo systemctl start gdm
 nohup polybar &
+
 
 
