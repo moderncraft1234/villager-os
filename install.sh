@@ -18,6 +18,7 @@ sudo pacman -Syy dolphin
 sudo pacman -Syy gimp
 sudo pacman -Syy blender
 sudo pacman -Syy openssh
+sudo pacman -Syy discord
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
