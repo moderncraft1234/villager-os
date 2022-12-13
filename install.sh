@@ -1,30 +1,30 @@
 #!/bin/bash
-sudo pacman -Syyu
-sudo pacman -Syy --asdeps i3
-sudo pacman -Syy --asdeps gdm
-sudo pacman -Syy --asdeps dmenu
-sudo pacman -Syy --asdeps ranger
-sudo pacman -Syy --asdeps zsh
-sudo pacman -Syy --asdeps networkmanager
-sudo pacman -Syy --asdeps emacs
-sudo pacman -Syy --asdeps nvim
-sudo pacman -Syy --asdeps mc
-sudo pacman -Syy --asdeps vim
-sudo pacman -Syy --asdeps nvim
-sudo pacman -Syy --asdeps gimp
-sudo pacman -Syy --asdeps polybar
-sudo pacman -Syy --asdeps nano
-sudo pacman -Syy --asdeps dolphin
-sudo pacman -Syy --asdeps gimp
-sudo pacman -Syy --asdeps blender
-sudo pacman -Syy --asdeps openssh
-sudo pacman -Syy --asdeps discord
-sudo pacman -Syy --asdeps konsole
-sudo pacman -Syy --asdeps plasma
-sudo pacman -Syy --asdeps virtualbox
-sudo pacman -Syy --asdeps kdenlive
-sudo pacman -Syy --asdeps tin2
-sudo pacman -S --needed --asdeps git base-devel
+sudo pacman -Syyu --noconfirm
+sudo pacman -Syy  i3 --noconfirm
+sudo pacman -Syy  gdm --noconfirm
+sudo pacman -Syy  dmenu --noconfirm
+sudo pacman -Syy  ranger --noconfirm
+sudo pacman -Syy  zsh --noconfirm
+sudo pacman -Syy  networkmanager --noconfirm
+sudo pacman -Syy  emacs --noconfirm
+sudo pacman -Syy  nvim --noconfirm
+sudo pacman -Syy  mc --noconfirm
+sudo pacman -Syy  vim --noconfirm
+sudo pacman -Syy  nvim --noconfirm
+sudo pacman -Syy  gimp --noconfirm
+sudo pacman -Syy  polybar --noconfirm
+sudo pacman -Syy  nano --noconfirm
+sudo pacman -Syy  dolphin --noconfirm
+sudo pacman -Syy  gimp --noconfirm
+sudo pacman -Syy  blender --noconfirm
+sudo pacman -Syy  openssh --noconfirm
+sudo pacman -Syy  discord --noconfirm
+sudo pacman -Syy  konsole --noconfirm
+sudo pacman -Syy  plasma --noconfirm
+sudo pacman -Syy  virtualbox --noconfirm
+sudo pacman -Syy  kdenlive --noconfirm
+sudo pacman -Syy  tin2 --noconfirm
+sudo pacman -S --needed --asdeps git base-devel --noconfirm
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
@@ -45,24 +45,22 @@ git clone https://github.com/moderncraft1234/villager-os/tree/main/random
 
 cp random ~Pictures/random
 
-yay -Sy google-chrome
+yay -Sy google-chrome --noconfirm
 
-yay -Sy wine
+yay -Sy wine --noconfirm
 
-yay -Sy lutris
+yay -Sy lutris --noconfirm
 
 yay -S --noconfirm zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
- 
+
 cp zshrc ~/.zshrc
 
 cp p10k.zsh ~/.p10k.zsh
 
-sudo cp hosts /etc/hosts
+cp tint2rc ~/.config/tint2/tint2rc
 
 sudo systemctl enable gdm
 sudo systemctl start gdm
 nohup exec polybar &
 nohup tin2 &
-
-
