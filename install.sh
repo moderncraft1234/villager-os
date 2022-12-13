@@ -23,7 +23,7 @@ sudo pacman -Syy  konsole --noconfirm
 sudo pacman -Syy  plasma --noconfirm
 sudo pacman -Syy  virtualbox --noconfirm
 sudo pacman -Syy  kdenlive --noconfirm
-sudo pacman -Syy  tin2 --noconfirm
+sudo pacman -Syy  tint2 --noconfirm
 sudo pacman -S --needed --asdeps git base-devel --noconfirm
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -41,9 +41,9 @@ git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~/.pr
 
 cp profile ~/.profile
 
-git clone https://github.com/moderncraft1234/villager-os/tree/main/random
+git clone https://github.com/moderncraft1234/villager-os/tree/main/random ~/Pictures/random
 
-cp random ~Pictures/random
+
 
 yay -Sy google-chrome --noconfirm
 
@@ -59,6 +59,8 @@ cp zshrc ~/.zshrc
 cp p10k.zsh ~/.p10k.zsh
 
 cp tint2rc ~/.config/tint2/tint2rc
+
+sudo cp hosts /etc/hosts
 
 sudo systemctl enable gdm
 sudo systemctl start gdm
