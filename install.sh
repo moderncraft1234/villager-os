@@ -46,6 +46,10 @@ cp random ~Pictures/random
 
 yay -Sy google-chrome
 
+yay -Sy wine
+
+yay -Sy lutris
+
 yay -S --noconfirm zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
@@ -55,7 +59,7 @@ cp p10k.zsh ~.p10k.zsh
 
 sudo systemctl enable gdm
 sudo systemctl start gdm
-nohup polybar &
+nohup exec polybar &
 
 
 
