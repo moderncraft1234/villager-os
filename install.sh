@@ -23,6 +23,7 @@ sudo pacman -Syy --asdeps konsole
 sudo pacman -Syy --asdeps plasma
 sudo pacman -Syy --asdeps virtualbox
 sudo pacman -Syy --asdeps kdenlive
+sudo pacman -Syy --asdeps tin2
 sudo pacman -S --needed --asdeps git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -36,9 +37,9 @@ sudo git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 yay -Syy feh
 mkdir ~/Pictures/random
 
-git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~.profile
+git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~/.profile
 
-cp profile ~.profile
+cp profile ~/.profile
 
 git clone https://github.com/moderncraft1234/villager-os/tree/main/random
 
@@ -52,14 +53,16 @@ yay -Sy lutris
 
 yay -S --noconfirm zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+ 
+cp zshrc ~/.zshrc
 
-cp zshrc ~.zshrc
+cp p10k.zsh ~/.p10k.zsh
 
-cp p10k.zsh ~.p10k.zsh
+sudo cp hosts /etc/hosts
 
 sudo systemctl enable gdm
 sudo systemctl start gdm
 nohup exec polybar &
-
+nohup tin2 &
 
 
