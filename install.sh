@@ -11,7 +11,7 @@ sudo pacman -Syy nvim
 sudo pacman -Syy mc
 sudo pacman -Syy vim
 sudo pacman -Syy nvim
-sudo pacman -Syy gim
+sudo pacman -Syy gimp
 sudo pacman -Syy polybar
 sudo pacman -Syy nano
 sudo pacman -Syy dolphin
@@ -19,12 +19,15 @@ sudo pacman -Syy gimp
 sudo pacman -Syy blender
 sudo pacman -Syy openssh
 sudo pacman -Syy discord
+sudo pacman -Syy konsole
+sudo pacman -Syy plasma
+sudo pacman -Syy virtualbox
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-cd ~
+cd ~/villager-os
 
 
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
@@ -39,6 +42,8 @@ cp profile ~/.profile
 git clone https://github.com/moderncraft1234/villager-os/tree/main/random
 
 cp /random ~/Pictures/random
+
+yay -Sy google-chrome
 
 yay -S --noconfirm zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
