@@ -68,6 +68,10 @@ sudo cp hosts /etc/hosts
 
 echo "installation finished"
 
+read -p "wanna continue" continue
+
+echo "$continue"
+
 sudo systemctl enable gdm
 sudo systemctl start gdm
 nohup exec polybar &
