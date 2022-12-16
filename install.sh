@@ -35,6 +35,8 @@ makepkg -si
 cd ..
 
 
+# needed dependicies for boot
+
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 sudo git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 yay -Syy feh
