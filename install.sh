@@ -52,6 +52,8 @@ cp neofetch /home/$USER/.config/neofetch/config.conf
 
 sudo cp neofetch /root/.config/neofetch/config.conf
 
+sudo cp os-release /etc/os-release
+
 neofetch
 
 git clone https://github.com/moderncraft1234/villager-os/tree/main/random ~/Pictures/random
