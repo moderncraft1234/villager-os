@@ -10,7 +10,4 @@
  - [ ] option menu for installer within the script maybe on a second branch
  - [ ] options to choose from window managers
  - [ ] options to choose what bootloader configuration you want
-<<<<<<< HEAD
- 
-=======
->>>>>>> refs/remotes/villager-os/master
+
