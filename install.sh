@@ -50,11 +50,13 @@ cp -r random/ /home/$USER/Picures/random
 
 cp neofetch /home/$USER/.config/neofetch/config.conf
 
+sudo cp neofetch /root/.config/neofetch/config.conf
+
 neofetch
 
 git clone https://github.com/moderncraft1234/villager-os/tree/main/random ~/Pictures/random
 
-
+yay -Sy screenfetch --noconfirm
 
 yay -Sy google-chrome --noconfirm
 
