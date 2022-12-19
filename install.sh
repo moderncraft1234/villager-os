@@ -46,9 +46,15 @@ git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~/.pr
 
 cp profile ~/.profile
 
+cp -r random/ /home/$USER/Picures/random
+
+cp neofetch /home/$USER/.config/neofetch/config.conf
+
+neofetch
+
 git clone https://github.com/moderncraft1234/villager-os/tree/main/random ~/Pictures/random
 
-cp random/ ~/Pictures/random
+
 
 yay -Sy google-chrome --noconfirm
 
@@ -68,11 +74,17 @@ cp tint2rc ~/.config/tint2/tint2rc
 sudo cp hosts /etc/hosts
 
 
-echo "installation finished"
+echo "thank you for taking the time to install villager-os enjoy the configs and theming"
 
-read -p "wanna continue" continue
+read -p "wanna continue:  " continue
 
-echo "$continue"
+mkdir /home/$USER/Documents/villager-os
+
+touch /home/$USER/Documents/villager-os/final.log
+
+echo "$continue" &> /home/$USER/Documents/villager-os/final.log
+
+# copy the configs and get extra dependicies for final installation
 
 sudo systemctl enable gdm
 sudo systemctl start gdm
