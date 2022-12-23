@@ -46,9 +46,9 @@ git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~/.pr
 
 cp profile ~/.profile
 
-cp -r random/ /home/$USER/Picures/random
+cp -r random/ $HOME/Picures/random
 
-cp neofetch /home/$USER/.config/neofetch/config.conf
+cp neofetch $HOME/.config/neofetch/config.conf
 
 sudo cp neofetch /root/.config/neofetch/config.conf
 
@@ -56,7 +56,7 @@ sudo cp os-release /etc/os-release
 
 neofetch
 
-git clone https://github.com/moderncraft1234/villager-os/tree/main/random ~/Pictures/random
+git clone https://github.com/moderncraft1234/villager-os/tree/main/random $HOME/Pictures/random
 
 yay -Sy screenfetch --noconfirm
 
@@ -82,11 +82,11 @@ echo "thank you for taking the time to install villager-os enjoy the configs and
 
 read -p "wanna continue:  " continue
 
-mkdir /home/$USER/Documents/villager-os
+mkdir $HOME/Documents/villager-os
 
-touch /home/$USER/Documents/villager-os/final.log
+touch $HOME/Documents/villager-os/final.log
 
-echo "$continue" &> /home/$USER/Documents/villager-os/final.log
+echo "$continue" &> $HOME/Documents/villager-os/final.log
 
 # copy the configs and get extra dependicies for final installation
 
