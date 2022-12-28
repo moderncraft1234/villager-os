@@ -5,9 +5,8 @@
 - [X] automatically sets wallpaper for i3 also walpapers are fully customizable
 - [X] only available on arch
 - [x] soon available on debian basd distributions
-
+- [X] installs nerdfonts for you
 - Still to be added
  - [ ] option menu for installer within the script maybe on a second branch
  - [ ] options to choose from window managers
  - [ ] options to choose what bootloader configuration you want
-

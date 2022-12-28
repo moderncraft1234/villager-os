@@ -1,6 +1,8 @@
 #!/bin/bash
 # start of script installing standard packages from ark
 sudo pacman -Syyu --noconfirm
+sudo pacman -Syy pulseaudio --noconfirm
+sudo pacman -Syy pulsemixer --noconfirm
 sudo pacman -Syy  i3 --noconfirm
 sudo pacman -Syy  gdm --noconfirm
 sudo pacman -Syy  dmenu --noconfirm
