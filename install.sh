@@ -1,4 +1,5 @@
 #!/bin/bash
+# start of script installing standard packages from ark
 sudo pacman -Syyu --noconfirm
 sudo pacman -Syy  i3 --noconfirm
 sudo pacman -Syy  gdm --noconfirm
@@ -16,7 +17,6 @@ sudo pacman -Syy  polybar --noconfirm
 sudo pacman -Syy  nano --noconfirm
 sudo pacman -Syy  dolphin --noconfirm
 sudo pacman -Syy  gimp --noconfirm
-sudo pacman -Syy  blender --noconfirm
 sudo pacman -Syy  openssh --noconfirm
 sudo pacman -Syy  discord --noconfirm
 sudo pacman -Syy  konsole --noconfirm
@@ -77,6 +77,20 @@ cp tint2rc ~/.config/tint2/tint2rc
 
 sudo cp hosts /etc/hosts
 
+# nerdfonts install
+
+yay -Sy fontconfig --noconfirm
+cd ~
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.0-RC/Meslo.zip
+mkdir -p .local/share/fonts
+unzip Meslo.zip -d .local/share/fonts
+cd .local/share/fonts
+rm *Windows*
+cd ~
+rm Meslo.zip
+fc-cache -fv
+
+# nerdfonts instalation intsall end
 
 echo "thank you for taking the time to install villager-os enjoy the configs and theming"
 
