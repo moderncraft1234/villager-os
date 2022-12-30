@@ -9,6 +9,7 @@ sudo pacman -Syy  dmenu --noconfirm
 sudo pacman -Syy  ranger --noconfirm
 sudo pacman -Syy  zsh --noconfirm
 sudo pacman -Syy  networkmanager --noconfirm
+sudo pacman -Syy networkmanager-applet --noconfirm
 sudo pacman -Syy  emacs --noconfirm
 sudo pacman -Syy  nvim --noconfirm
 sudo pacman -Syy  mc --noconfirm
@@ -88,7 +89,7 @@ mkdir -p .local/share/fonts
 unzip Meslo.zip -d .local/share/fonts
 cd .local/share/fonts
 rm *Windows*
-cd ~
+cd $HOME/villager-os
 rm Meslo.zip
 fc-cache -fv
 
