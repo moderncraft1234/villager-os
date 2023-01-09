@@ -1,4 +1,3 @@
-#https://github.com/moderncraft1234/villager-os https://github.com/moderncraft1234/villager-osvillager-os
 ## custom config for arch + window manager and display manager
 
 - [X] gets up to date packages
