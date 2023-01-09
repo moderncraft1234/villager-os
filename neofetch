@@ -65,7 +65,7 @@ distro_shorthand="off"
 # Example:
 # on:  'Arch Linux x86_64'
 # off: 'Arch Linux'
-os_arch="off"
+os_arch="on"
 
 
 ##--------- Uptime
@@ -135,7 +135,7 @@ package_managers="on"
 # Example:
 # on:  '/bin/bash'
 # off: 'bash'
-shell_path="off"
+shell_path="on"
 
 # Show $SHELL version
 #
@@ -170,7 +170,7 @@ speed_type="bios_limit"
 # Example:
 # on:    'i7-6500U (4) @ 3.1GHz'
 # off:   'i7-6500U (4) @ 3.100GHz'
-speed_shorthand="off"
+speed_shorthand="on"
 
 # Enable/Disable CPU brand in output.
 #
@@ -207,7 +207,7 @@ cpu_speed="off"
 # logical:  'Intel i7-6500U (4) @ 3.1GHz' (All virtual cores)
 # physical: 'Intel i7-6500U (2) @ 3.1GHz' (All physical cores)
 # off:      'Intel i7-6500U @ 3.1GHz'
-cpu_cores="off"
+cpu_cores="on"
 
 # CPU Temperature
 # Hide/Show CPU temperature.
@@ -224,7 +224,7 @@ cpu_cores="off"
 # C:   'Intel i7-6500U (4) @ 3.1GHz [27.2°C]'
 # F:   'Intel i7-6500U (4) @ 3.1GHz [82.0°F]'
 # off: 'Intel i7-6500U (4) @ 3.1GHz'
-cpu_temp="off"
+cpu_temp="on"
 
 
 ##--------- GPU
