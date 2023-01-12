@@ -93,6 +93,11 @@ cd $HOME/villager-os
 rm Meslo.zip
 fc-cache -fv
 
+type -a zsh
+chsh -s /bin/zsh
+
+
+sudo type -a zsh
 sudo chsh -s /bin/zsh
 
 # nerdfonts instalation intsall end
