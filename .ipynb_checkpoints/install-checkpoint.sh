@@ -49,9 +49,9 @@ git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~/.pr
 
 cp profile ~/.profile
 
-cp -r random/ /home/$USER/Picures/random
+cp -r random/ $HOME/Picures/random
 
-cp neofetch /home/$USER/.config/neofetch/config.conf
+cp neofetch $HOME/.config/neofetch/config.conf
 
 sudo cp neofetch /root/.config/neofetch/config.conf
 
@@ -92,8 +92,6 @@ rm *Windows*
 cd $HOME/villager-os
 rm Meslo.zip
 fc-cache -fv
-
-sudo chsh -s /bin/zsh
 
 # nerdfonts instalation intsall end
 
