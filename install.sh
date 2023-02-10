@@ -43,7 +43,7 @@ cd ..
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 sudo git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 yay -Syy feh
-mkdir ~/Pictures/random
+
 
 git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~/.profile
 
@@ -59,7 +59,9 @@ sudo cp os-release /etc/os-release
 
 neofetch
 
-git clone https://github.com/moderncraft1234/villager-os/tree/main/random $HOME/Pictures/random
+mkdir $HOME/Pictures/random
+
+cp -r random/ $HOME/Pictures/random
 
 yay -Sy screenfetch --noconfirm
 
