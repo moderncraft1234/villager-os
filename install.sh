@@ -1,35 +1,36 @@
 #!/bin/bash
 # start of script installing standard packages from ark
 sudo pacman -Syyu --noconfirm
-sudo pacman -Syy pulseaudio --noconfirm
-sudo pacman -Syy pulsemixer --noconfirm
-sudo pacman -Syy  i3 --noconfirm
-sudo pacman -Syy  gdm --noconfirm
-sudo pacman -Syy  dmenu --noconfirm
-sudo pacman -Syy  ranger --noconfirm
-sudo pacman -Syy  zsh --noconfirm
-sudo pacman -Syy  networkmanager --noconfirm
-sudo pacman -Syy networkmanager-applet --noconfirm
-sudo pacman -Syy  emacs --noconfirm
-sudo pacman -Syy  nvim --noconfirm
-sudo pacman -Syy  mc --noconfirm
-sudo pacman -Syy  vim --noconfirm
-sudo pacman -Syy  nvim --noconfirm
-sudo pacman -Syy  gimp --noconfirm
-sudo pacman -Syy  polybar --noconfirm
-sudo pacman -Syy  nano --noconfirm
-sudo pacman -Syy  dolphin --noconfirm
-sudo pacman -Syy  gimp --noconfirm
-sudo pacman -Syy  openssh --noconfirm
-sudo pacman -Syy  discord --noconfirm
-sudo pacman -Syy  konsole --noconfirm
-sudo pacman -Syy  plasma --noconfirm
-sudo pacman -Syy  virtualbox --noconfirm
-sudo pacman -Syy  kdenlive --noconfirm
-sudo pacman -Syy  tint2 --noconfirm
-sudo pacman -Syy kate --noconfirm
-sudo pacman -Syy neofetch --noconfirm
-sudo pacman -Syy screenfetch --noconfirm
+sudo pacman -S pulseaudio --noconfirm
+sudo pacman -S pulsemixer --noconfirm
+sudo pacman -S  i3 --noconfirm
+sudo pacman -S  gdm --noconfirm
+sudo pacman -S  dmenu --noconfirm
+sudo pacman -S  ranger --noconfirm
+sudo pacman -S  zsh --noconfirm
+sudo pacman -S fish --noconfirm
+sudo pacman -S  networkmanager --noconfirm
+sudo pacman -S networkmanager-applet --noconfirm
+sudo pacman -S  emacs --noconfirm
+sudo pacman -S  nvim --noconfirm
+sudo pacman -S  mc --noconfirm
+sudo pacman -S  vim --noconfirm
+sudo pacman -S  nvim --noconfirm
+sudo pacman -S  gimp --noconfirm
+sudo pacman -S  polybar --noconfirm
+sudo pacman -S  nano --noconfirm
+sudo pacman -S  dolphin --noconfirm
+sudo pacman -S  gimp --noconfirm
+sudo pacman -S  openssh --noconfirm
+sudo pacman -S  discord --noconfirm
+sudo pacman -S  konsole --noconfirm
+sudo pacman -S  plasma --noconfirm
+sudo pacman -S  virtualbox --noconfirm
+sudo pacman -S  kdenlive --noconfirm
+sudo pacman -S  tint2 --noconfirm
+sudo pacman -S kate --noconfirm
+sudo pacman -S neofetch --noconfirm
+sudo pacman -S screenfetch --noconfirm
 sudo pacman -S --needed --asdeps git base-devel --noconfirm
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -44,12 +45,17 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 sudo git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 yay -Syy feh
 
-
-git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~/.profile
+# getting profile copied and neofetch configuration (most important part of the setup)
 
 cp profile ~/.profile
 
-cp -r random/ /home/$USER/Picures/random
+mkdir $HOME/Pictures
+
+neofetch
+
+sudo neofetch
+
+cp -r -vvv random/ $HOME/Picures/
 
 cp neofetch /home/$USER/.config/neofetch/config.conf
 
@@ -59,9 +65,9 @@ sudo cp os-release /etc/os-release
 
 neofetch
 
-mkdir $HOME/Pictures/random
+sudo neofetch
 
-cp -r random/ $HOME/Pictures/random
+# aur packages (optional)
 
 yay -Sy screenfetch --noconfirm
 
@@ -96,11 +102,11 @@ rm Meslo.zip
 fc-cache -fv
 
 type -a zsh
-chsh -s /bin/zsh
+chsh -s /bin/fish
 
 
-sudo type -a zsh
-sudo chsh -s /bin/zsh
+sudo type -a fish
+sudo chsh -s /bin/fish
 
 # nerdfonts instalation intsall end
 
