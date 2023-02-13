@@ -55,7 +55,9 @@ neofetch
 
 sudo neofetch
 
-cp -r -vvv random/ $HOME/Picures/
+mkdir $HOME/Pictures/random
+
+cp -r -vvv random/ $HOME/Pictures/random
 
 cp neofetch /home/$USER/.config/neofetch/config.conf
 
