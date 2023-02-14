@@ -103,6 +103,13 @@ cd $HOME/villager-os
 rm Meslo.zip
 fc-cache -fv
 
+
+# grub bootloader conf
+
+sudo git clone https://github.com/moderncraft1234/grubTheme /boot/grub/themes
+
+sudo cp -v grub /etc/default/grub
+
 # needs more options on what shell u can choose users choice
 
 type -a zsh
