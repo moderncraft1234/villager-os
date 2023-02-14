@@ -11,6 +11,10 @@
  - [ ] options to choose from window managers
  - [ ] options to choose what bootloader configuration you want
 
+## general overview
+
+| this is a custom desktop envirement that i wrote for arch linux to improve ur workflow its based uppon a tiling window manager called i3 from wich i modified grub to a more eye pleasant theme and i modified the shell and made it to be fish shell for more user friendlyness the default terminal window is ofc konsole also it comes with kde plasma and all its tooling this project took over the spent of a few months mainly bc i was trying to improve the script and its effectiveness and i made it so more people can have a pre configured tiling window manager since for begining people this could be a hassle to get the right things and the right stuff installed for certain functionality i do encourage people to take a look at the script itself and modify it however they can so they can learn from it and ofc this script installs a modified version of emacs for you called spacemacs it install vim for you and regenerates ur initframs.. Thank u for reading this and hopefully u will soon start making ur linux user experience more pleasant with this script :D.. |
+
 # how to install
 
 - step 1 get ur arch linux iso copy
@@ -26,7 +30,7 @@
 - step 11 git clone https://github.com/moderncraft1234/villager-os
 - step 12 cd villager-os
 - step 13 chmod +x install.sh
-- step 14 ./install.sh (the installment of the configs and desktop enviremont)
+- step 14 ./install.sh (the installment of the configs and desktop envirement)
 - step 15 select i3 as desktop envirement check if everything is properly working
 ________________________________________________________________________________
 
