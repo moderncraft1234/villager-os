@@ -57,7 +57,7 @@ sudo neofetch
 
 mkdir $HOME/Pictures/random
 
-cp -r -vvv random/ $HOME/Pictures/random
+cp -r -vvv random/ $HOME/Pictures/
 
 cp neofetch /home/$USER/.config/neofetch/config.conf
 
@@ -102,6 +102,8 @@ rm *Windows*
 cd $HOME/villager-os
 rm Meslo.zip
 fc-cache -fv
+
+# needs more options on what shell u can choose users choice
 
 type -a zsh
 chsh -s /bin/fish
