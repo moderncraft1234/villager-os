@@ -13,7 +13,16 @@
 
 ## general overview
 
-| this is a custom desktop envirement that i wrote for arch linux to improve ur workflow its based uppon a tiling window manager called i3 from wich i modified grub to a more eye pleasant theme and i modified the shell and made it to be fish shell for more user friendlyness the default terminal window is ofc konsole also it comes with kde plasma and all its tooling this project took over the spent of a few months mainly bc i was trying to improve the script and its effectiveness and i made it so more people can have a pre configured tiling window manager since for begining people this could be a hassle to get the right things and the right stuff installed for certain functionality i do encourage people to take a look at the script itself and modify it however they can so they can learn from it and ofc this script installs a modified version of emacs for you called spacemacs it install vim for you and regenerates ur initframs.. Thank u for reading this and hopefully u will soon start making ur linux user experience more pleasant with this script :D.. |
+ this is a custom desktop envirement that i wrote for arch linux to improve ur workflow.
+ its based uppon a tiling window manager called i3 from wich i modified grub to a more eye pleasant theme and i modified the shell and made it to be fish shell for more user friendlyness.
+ 
+ the default terminal window is ofc konsole
+ it comes with kde plasma and all of its tooling 
+ 
+ this project took over the span of a few months, mainly bc i was trying to improve the script and its effectiveness and i made it so more people can have a pre configured tiling window manager
+ since for begining people this could be a hassle to get the right things and the right stuff installed
+ for certain functionality i do encourage people to take a look at the script itself and modify it however they can so they can learn from it and ofc this script installs a modified version of emacs for you called spacemacs it install vim for you and regenerates ur initframs..
+ Thank u for reading this and hopefully u will soon start making ur linux user experience more pleasant with this script :D..
 
 # how to install
 
