@@ -1,6 +1,9 @@
 #!/bin/bash
 # start of script installing standard packages from ark
-sudo pacman -Syyu --noconfirm
+mkdir $HOME/Documents/villager-os
+
+
+sudo pacman -Syyu --noconfirm 
 sudo pacman -S pulseaudio --noconfirm
 sudo pacman -S pulsemixer --noconfirm
 sudo pacman -S  i3 --noconfirm
@@ -88,7 +91,7 @@ cp p10k.zsh ~/.p10k.zsh
 
 cp tint2rc ~/.config/tint2/tint2rc
 
-sudo cp hosts /etc/hosts
+# sudo cp hosts /etc/hosts
 
 # nerdfonts install
 
@@ -112,7 +115,7 @@ sudo cp -v grub /etc/default/grub
 
 # needs more options on what shell u can choose users choice
 
-type -a zsh
+type -a fish
 chsh -s /bin/fish
 
 
@@ -125,7 +128,7 @@ echo "thank you for taking the time to install villager-os enjoy the configs and
 
 read -p "wanna continue:  " continue
 
-mkdir $HOME/Documents/villager-os
+
 
 touch $HOME/Documents/villager-os/final.log
 
