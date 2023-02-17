@@ -1,9 +1,11 @@
 #!/bin/bash
 # start of script installing standard packages from ark
+mkdir $HOME/Documents
 mkdir $HOME/Documents/villager-os
 
 
-sudo pacman -Syyu --noconfirm 
+sudo pacman -Syyu --noconfirm
+sudo pacman -S gcc --noconfirm
 sudo pacman -S pulseaudio --noconfirm
 sudo pacman -S pulsemixer --noconfirm
 sudo pacman -S  i3 --noconfirm
@@ -74,6 +76,12 @@ sudo neofetch
 
 # aur packages (optional)
 
+yay -S linux-drm-next-git --noconfirm
+
+yay -S linux-lts510 --noconfirm
+
+yay -S linux-git --noconfirm
+
 yay -Sy screenfetch --noconfirm
 
 yay -Sy google-chrome --noconfirm
@@ -87,7 +95,11 @@ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zs
 
 cp zshrc ~/.zshrc
 
+sudo cp zshrc $HOME/.zshrc
+
 cp p10k.zsh ~/.p10k.zsh
+
+sudo cp p10k.zsh $HOME/.p10k.zsh
 
 cp tint2rc ~/.config/tint2/tint2rc
 
@@ -112,6 +124,8 @@ fc-cache -fv
 sudo git clone https://github.com/moderncraft1234/grubTheme /boot/grub/themes
 
 sudo cp -v grub /etc/default/grub
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 # needs more options on what shell u can choose users choice
 
