@@ -76,11 +76,11 @@ sudo neofetch
 
 # aur packages (optional)
 
-yay -S linux-drm-next-git --noconfirm
+# yay -S linux-drm-next-git --noconfirm
 
-yay -S linux-lts510 --noconfirm
+# yay -S linux-lts510 --noconfirm
 
-yay -S linux-git --noconfirm
+# yay -S linux-git --noconfirm
 
 yay -Sy screenfetch --noconfirm
 
