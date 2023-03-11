@@ -3,7 +3,7 @@
 - [X] gets up to date packages
 - [X] automatically sets wallpaper for i3 also walpapers are fully customizable
 - [X] only available on arch
-- [x] soon available on debian basd distributions
+- [x] soon available on debian based distributions
 - [X] installs nerdfonts for you
 - [X] installs custom grub theme for you
 - Still to be added
