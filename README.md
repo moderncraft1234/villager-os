@@ -3,7 +3,7 @@
 - [X] gets up to date packages
 - [X] automatically sets wallpaper for i3 also walpapers are fully customizable
 - [X] only available on arch
-- [x] soon available on debian basd distributions
+- [x] soon available on debian based distributions
 - [X] installs nerdfonts for you
 - [X] installs custom grub theme for you
 - Still to be added
@@ -14,7 +14,7 @@
 ## general overview
 
  this is a custom desktop envirement that i wrote for arch linux to improve ur workflow.
- its based uppon a tiling window manager called i3 from wich i modified grub to a more eye pleasant theme and i modified the shell and made it to be fish shell for more user friendlyness.
+ its based uppon a tiling window manager called i3 from which i modified grub to a more eye pleasant theme and i modified the shell and made it to be fish shell for more user friendlyness.
  
  the default terminal window is ofc konsole
  it comes with kde plasma and all of its tooling 
