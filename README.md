@@ -15,7 +15,7 @@
 
  this is a custom desktop envirement that i wrote for arch linux to improve ur workflow.
  its based uppon a tiling window manager called i3 from which i modified grub to a more eye pleasant theme and i modified the shell and made it to be fish shell for more user friendlyness.
- 
+
  the default terminal window is ofc konsole
  it comes with kde plasma and all of its tooling 
  
@@ -44,14 +44,6 @@
 - step 14 ./install.sh (the installment of the configs and desktop envirement)
 - step 15 select i3 as desktop envirement check if everything is properly working
 ________________________________________________________________________________
-
-| 1 | 2   | 3   | 4   | 5   |
-|---|-----|-----|-----|-----|
-| A | [X] | [X] | [X] | [X] |
-| B | [X] | [x] | [X] | [X] |
-| C | [X] | [X] | [X] | [X] |
-| D | [X] | [X] | [X] | [X] |
-| E | [X] | [X] | [X] | [X] |
 
 
 # for any questions consult me on discord
