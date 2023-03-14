@@ -5,6 +5,7 @@ mkdir $HOME/Documents/villager-os
 
 
 sudo pacman -Syyu --noconfirm
+sudo pacman -S gtop --noconfirm
 sudo pacman -S gcc --noconfirm
 sudo pacman -S pulseaudio --noconfirm
 sudo pacman -S pulsemixer --noconfirm
