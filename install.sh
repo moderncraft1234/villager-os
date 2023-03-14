@@ -1,35 +1,43 @@
 #!/bin/bash
 # start of script installing standard packages from ark
+mkdir $HOME/Documents
+mkdir $HOME/Documents/villager-os
+
+
 sudo pacman -Syyu --noconfirm
-sudo pacman -Syy pulseaudio --noconfirm
-sudo pacman -Syy pulsemixer --noconfirm
-sudo pacman -Syy  i3 --noconfirm
-sudo pacman -Syy  gdm --noconfirm
-sudo pacman -Syy  dmenu --noconfirm
-sudo pacman -Syy  ranger --noconfirm
-sudo pacman -Syy  zsh --noconfirm
-sudo pacman -Syy  networkmanager --noconfirm
-sudo pacman -Syy networkmanager-applet --noconfirm
-sudo pacman -Syy  emacs --noconfirm
-sudo pacman -Syy  nvim --noconfirm
-sudo pacman -Syy  mc --noconfirm
-sudo pacman -Syy  vim --noconfirm
-sudo pacman -Syy  nvim --noconfirm
-sudo pacman -Syy  gimp --noconfirm
-sudo pacman -Syy  polybar --noconfirm
-sudo pacman -Syy  nano --noconfirm
-sudo pacman -Syy  dolphin --noconfirm
-sudo pacman -Syy  gimp --noconfirm
-sudo pacman -Syy  openssh --noconfirm
-sudo pacman -Syy  discord --noconfirm
-sudo pacman -Syy  konsole --noconfirm
-sudo pacman -Syy  plasma --noconfirm
-sudo pacman -Syy  virtualbox --noconfirm
-sudo pacman -Syy  kdenlive --noconfirm
-sudo pacman -Syy  tint2 --noconfirm
-sudo pacman -Syy kate --noconfirm
-sudo pacman -Syy neofetch --noconfirm
-sudo pacman -Syy screenfetch --noconfirm
+sudo pacman -S gtop --noconfirm
+sudo pacman -S htop --noconfirm
+sudo pacman -S gcc --noconfirm
+sudo pacman -S pulseaudio --noconfirm
+sudo pacman -S pulsemixer --noconfirm
+sudo pacman -S  i3 --noconfirm
+sudo pacman -S  gdm --noconfirm
+sudo pacman -S  dmenu --noconfirm
+sudo pacman -S  ranger --noconfirm
+sudo pacman -S  zsh --noconfirm
+sudo pacman -S fish --noconfirm
+sudo pacman -S  networkmanager --noconfirm
+sudo pacman -S networkmanager-applet --noconfirm
+sudo pacman -S  emacs --noconfirm
+sudo pacman -S  nvim --noconfirm
+sudo pacman -S  mc --noconfirm
+sudo pacman -S  vim --noconfirm
+sudo pacman -S  nvim --noconfirm
+sudo pacman -S  gimp --noconfirm
+sudo pacman -S  polybar --noconfirm
+sudo pacman -S  nano --noconfirm
+sudo pacman -S  dolphin --noconfirm
+sudo pacman -S  gimp --noconfirm
+sudo pacman -S  openssh --noconfirm
+sudo pacman -S  discord --noconfirm
+sudo pacman -S  konsole --noconfirm
+sudo pacman -S  plasma --noconfirm
+sudo pacman -S  virtualbox --noconfirm
+sudo pacman -S  kdenlive --noconfirm
+sudo pacman -S  tint2 --noconfirm
+sudo pacman -S kate --noconfirm
+sudo pacman -S neofetch --noconfirm
+sudo pacman -S screenfetch --noconfirm
 sudo pacman -S --needed --asdeps git base-devel --noconfirm
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -43,13 +51,20 @@ cd ..
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 sudo git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 yay -Syy feh
-mkdir ~/Pictures/random
 
-git clone https://github.com/moderncraft1234/villager-os/blob/main/profile ~/.profile
+# getting profile copied and neofetch configuration (most important part of the setup)
 
 cp profile ~/.profile
 
-cp -r random/ /home/$USER/Picures/random
+mkdir $HOME/Pictures
+
+neofetch
+
+sudo neofetch
+
+mkdir $HOME/Pictures/random
+
+cp -r -vvv random/ $HOME/Pictures/
 
 cp neofetch /home/$USER/.config/neofetch/config.conf
 
@@ -59,7 +74,15 @@ sudo cp os-release /etc/os-release
 
 neofetch
 
-git clone https://github.com/moderncraft1234/villager-os/tree/main/random $HOME/Pictures/random
+sudo neofetch
+
+# aur packages (optional)
+
+# yay -S linux-drm-next-git --noconfirm
+
+# yay -S linux-lts510 --noconfirm
+
+# yay -S linux-git --noconfirm
 
 yay -Sy screenfetch --noconfirm
 
@@ -74,11 +97,15 @@ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zs
 
 cp zshrc ~/.zshrc
 
+sudo cp zshrc $HOME/.zshrc
+
 cp p10k.zsh ~/.p10k.zsh
+
+sudo cp p10k.zsh $HOME/.p10k.zsh
 
 cp tint2rc ~/.config/tint2/tint2rc
 
-sudo cp hosts /etc/hosts
+# sudo cp hosts /etc/hosts
 
 # nerdfonts install
 
@@ -93,7 +120,23 @@ cd $HOME/villager-os
 rm Meslo.zip
 fc-cache -fv
 
-sudo chsh -s /bin/zsh
+
+# grub bootloader conf
+
+sudo git clone https://github.com/moderncraft1234/grubTheme /boot/grub/themes
+
+sudo cp -v grub /etc/default/grub
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+# needs more options on what shell u can choose users choice
+
+type -a fish
+chsh -s /bin/fish
+
+
+sudo type -a fish
+sudo chsh -s /bin/fish
 
 # nerdfonts instalation intsall end
 
@@ -101,7 +144,7 @@ echo "thank you for taking the time to install villager-os enjoy the configs and
 
 read -p "wanna continue:  " continue
 
-mkdir $HOME/Documents/villager-os
+
 
 touch $HOME/Documents/villager-os/final.log
 
