@@ -4,6 +4,7 @@ mkdir $HOME/Documents
 mkdir $HOME/Documents/villager-os
 
 sudo pacman -Syyu --noconfirm
+sudo pacman -S network-manager-applet --noconfirm
 sudo pacman -S gtop --noconfirm
 sudo pacman -S htop --noconfirm
 sudo pacman -S gcc --noconfirm
@@ -76,7 +77,6 @@ neofetch
 
 sudo neofetch
 
-echo "Now we you can have the choice to install some aur packages these are all optional so you just can select what you want and you dont want"
 
 # aur packages (optional)
 
@@ -86,9 +86,12 @@ echo "Now we you can have the choice to install some aur packages these are all 
 
 # yay -S linux-git --noconfirm
 
-yay -Sy screenfetch --noconfirm
+yay -S btop --noconfirm
 
-yay -Sy google-chrome --noconfirm
+
+yay -S screenfetch --noconfirm --noconfirm
+
+yay -S google-chrome --noconfirm
 
 yay -S zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
