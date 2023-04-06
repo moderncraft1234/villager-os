@@ -86,13 +86,9 @@ echo "Now we you can have the choice to install some aur packages these are all 
 
 # yay -S linux-git --noconfirm
 
-yay -Sy screenfetch
+yay -Sy screenfetch --noconfirm
 
-yay -Sy google-chrome
-
-yay -Sy wine
-
-yay -Sy lutris
+yay -Sy google-chrome --noconfirm
 
 yay -S zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
