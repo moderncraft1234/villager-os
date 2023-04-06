@@ -3,7 +3,6 @@
 mkdir $HOME/Documents
 mkdir $HOME/Documents/villager-os
 
-
 sudo pacman -Syyu --noconfirm
 sudo pacman -S gtop --noconfirm
 sudo pacman -S htop --noconfirm
@@ -46,11 +45,12 @@ makepkg -si
 cd ..
 
 
+
 # needed dependicies for boot
 
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 sudo git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-yay -Syy feh
+yay -Syy feh --noconfirm
 
 # getting profile copied and neofetch configuration (most important part of the setup)
 
@@ -76,6 +76,8 @@ neofetch
 
 sudo neofetch
 
+echo "Now we you can have the choice to install some aur packages these are all optional so you just can select what you want and you dont want"
+
 # aur packages (optional)
 
 # yay -S linux-drm-next-git --noconfirm
@@ -84,24 +86,24 @@ sudo neofetch
 
 # yay -S linux-git --noconfirm
 
-yay -Sy screenfetch --noconfirm
+yay -Sy screenfetch
 
-yay -Sy google-chrome --noconfirm
+yay -Sy google-chrome
 
-yay -Sy wine --noconfirm
+yay -Sy wine
 
-yay -Sy lutris --noconfirm
+yay -Sy lutris
 
-yay -S --noconfirm zsh-theme-powerlevel10k-git
+yay -S zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 cp zshrc ~/.zshrc
 
-sudo cp zshrc $HOME/.zshrc
+sudo cp zshrc /root/.zshrc
 
 cp p10k.zsh ~/.p10k.zsh
 
-sudo cp p10k.zsh $HOME/.p10k.zsh
+sudo cp p10k.zsh /root/.p10k.zsh
 
 cp tint2rc ~/.config/tint2/tint2rc
 
@@ -140,7 +142,7 @@ sudo chsh -s /bin/fish
 
 # nerdfonts instalation intsall end
 
-echo "thank you for taking the time to install villager-os enjoy the configs and theming"
+echo "thank you for taking the time to install villager-os enjoy the configs and theming. Small notes the backrounds provided for i3 is configured in $HOME/Pictures/random u can add and remove pictures in that folder also the script installed a new bootloader theme u can customize themes in /etc/default/grub under GRUB_THEME"
 
 read -p "wanna continue:  " continue
 
