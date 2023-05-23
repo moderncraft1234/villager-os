@@ -43,6 +43,9 @@
 - step 13 chmod +x install.sh
 - step 14 ./install.sh (the installment of the configs and desktop envirement)
 - step 15 select i3 as desktop envirement check if everything is properly working
+
+```for wine u need to install the multilib repository in the /etc/pacman.conf file ```
+
 ________________________________________________________________________________
 
 

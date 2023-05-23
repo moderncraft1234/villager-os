@@ -6,6 +6,7 @@ mkdir $HOME/Documents/villager-os
 sudo pacman -Syyu --noconfirm
 sudo pacman -S network-manager-applet --noconfirm
 sudo pacman -S gtop --noconfirm
+sudo pacman -S ark --noconfirm
 sudo pacman -S htop --noconfirm
 sudo pacman -S gcc --noconfirm
 sudo pacman -S pulseaudio --noconfirm
@@ -43,11 +44,12 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
+
 cd ..
 
 
 
-# needed dependicies for boot
+# needed dependicies for boot ^^^
 
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 sudo git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
@@ -55,28 +57,35 @@ yay -Syy feh --noconfirm
 
 # getting profile copied and neofetch configuration (most important part of the setup)
 
-cp profile ~/.profile
+cp -vvv profile ~/.profile
 
-mkdir $HOME/Pictures
+mkdir -vvv $HOME/Pictures
 
 neofetch
 
 sudo neofetch
 
-mkdir $HOME/Pictures/random
+mkdir -vvv $HOME/Pictures/random
 
 cp -r -vvv random/ $HOME/Pictures/
 
 cp neofetch /home/$USER/.config/neofetch/config.conf
 
-sudo cp neofetch /root/.config/neofetch/config.conf
+sudo cp -vvv neofetch /root/.config/neofetch/config.conf
 
-sudo cp os-release /etc/os-release
+sudo cp -vvv os-release /etc/os-release
 
 neofetch
 
 sudo neofetch
 
+# Customizing package manager for the abbility to install wine from the official repositories and the config includes some minor theming and a few aditional repositories
+
+sudo rm -vvv /etc/pacman.conf
+
+sudo cp -vvv pacman.conf /etc/pacman.conf
+
+pacman -Sy wine --noconfirm
 
 # aur packages (optional)
 
