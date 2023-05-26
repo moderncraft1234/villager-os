@@ -86,6 +86,8 @@ sudo rm -vvv /etc/pacman.conf
 
 sudo cp -vvv pacman.conf /etc/pacman.conf
 
+source /etc/pacman.conf
+
 pacman -Syy --noconfirm
 
 pacman -Sy wine --noconfirm
