@@ -81,9 +81,12 @@ sudo neofetch
 
 # Customizing package manager for the abbility to install wine from the official repositories and the config includes some minor theming and a few aditional repositories
 
+
 sudo rm -vvv /etc/pacman.conf
 
 sudo cp -vvv pacman.conf /etc/pacman.conf
+
+pacman -Syy --noconfirm
 
 pacman -Sy wine --noconfirm
 

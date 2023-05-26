@@ -9,7 +9,7 @@ print_info() {
         
     prin "${c1} Sys-Info       "
     prin "$(color 1) ├────$(color 2)────$(color 3)────$(color 4)────$(color 5)────$(color 6)────$(color 7)────$(color 8)──"
-    info "${c5} ├─  Distro     " distro
+    info "${c5} ├─  Distro     " distro
     info "${c5} ├─  Kernel     " kernel
     info "${c5} ├─  DE/WM      " wm
     info "${c5} ├─  CPU        " cpu
@@ -94,7 +94,7 @@ uptime_shorthand="on"
 # Example:
 # on:   '1801MiB / 7881MiB (22%)'
 # off:  '1801MiB / 7881MiB'
-memory_percent="off"
+memory_percent="on"
 
 # Change memory output unit.
 #
