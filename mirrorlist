@@ -8,7 +8,7 @@
 # Retrieved:  2023-02-03 11:57:42 UTC
 # Last Check: 2023-02-03 11:55:40 UTC
 
-Server = https://mirror.eloteam.tk/archlinux/$repo/os/$arch
+#Server = https://mirror.eloteam.tk/archlinux/$repo/os/$arch
 Server = https://de.arch.mirror.kescher.at/$repo/os/$arch
 Server = https://mirror.osbeck.com/archlinux/$repo/os/$arch
 Server = https://mirror.theo546.fr/archlinux/$repo/os/$arch
@@ -29,3 +29,43 @@ Server = https://mirror.ubrco.de/archlinux/$repo/os/$arch
 Server = https://mirror.neuf.no/archlinux/$repo/os/$arch
 Server = https://mirror.yal.sl-chat.ru/archlinux/$repo/os/$arch
 Server = https://mirror.tux.si/arch/$repo/os/$arch
+
+
+
+Server = http://mirror.cj2.nl/archlinux/$repo/os/$arch
+Server = https://mirror.cj2.nl/archlinux/$repo/os/$arch
+Server = https://mirrors.daan.vodka/archlinux/$repo/os/$arch
+Server = http://mirrors.evoluso.com/archlinux/$repo/os/$arch
+Server = http://mirror.i3d.net/pub/archlinux/$repo/os/$arch
+Server = https://mirror.i3d.net/pub/archlinux/$repo/os/$arch
+Server = https://arch.jeweet.net/$repo/os/$arch
+Server = http://mirror.koddos.net/archlinux/$repo/os/$arch
+Server = https://mirror.koddos.net/archlinux/$repo/os/$arch
+Server = http://arch.mirrors.lavatech.top/$repo/os/$arch
+Server = https://arch.mirrors.lavatech.top/$repo/os/$arch
+Server = http://mirror.ams1.nl.leaseweb.net/archlinux/$repo/os/$arch
+Server = https://mirror.ams1.nl.leaseweb.net/archlinux/$repo/os/$arch
+Server = http://archlinux.mirror.liteserver.nl/$repo/os/$arch
+Server = https://archlinux.mirror.liteserver.nl/$repo/os/$arch
+Server = http://mirror.lyrahosting.com/archlinux/$repo/os/$arch
+Server = https://mirror.lyrahosting.com/archlinux/$repo/os/$arch
+Server = http://mirror.mijn.host/archlinux/$repo/os/$arch
+Server = https://mirror.mijn.host/archlinux/$repo/os/$arch
+Server = http://mirror.neostrada.nl/archlinux/$repo/os/$arch
+Server = https://mirror.neostrada.nl/archlinux/$repo/os/$arch
+Server = http://ftp.nluug.nl/os/Linux/distr/archlinux/$repo/os/$arch
+Server = http://archlinux.mirror.pcextreme.nl/$repo/os/$arch
+Server = https://archlinux.mirror.pcextreme.nl/$repo/os/$arch
+Server = http://mirror.serverion.com/archlinux/$repo/os/$arch
+Server = https://mirror.serverion.com/archlinux/$repo/os/$arch
+Server = http://ftp.snt.utwente.nl/pub/os/linux/archlinux/$repo/os/$arch
+Server = http://mirror.tarellia.net/distr/archlinux/$repo/os/$arch
+Server = https://mirror.tarellia.net/distr/archlinux/$repo/os/$arch
+Server = http://mirrors.viflcraft.top/archlinux/$repo/os/$arch
+Server = https://mirrors.viflcraft.top/archlinux/$repo/os/$arch
+Server = http://archlinux.mirror.wearetriple.com/$repo/os/$arch
+Server = https://archlinux.mirror.wearetriple.com/$repo/os/$arch
+Server = http://mirror-archlinux.webruimtehosting.nl/$repo/os/$arch
+Server = https://mirror-archlinux.webruimtehosting.nl/$repo/os/$arch
+Server = http://mirrors.xtom.nl/archlinux/$repo/os/$arch
+Server = https://mirrors.xtom.nl/archlinux/$repo/os/$arch
