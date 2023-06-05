@@ -39,6 +39,7 @@ sudo pacman -S  tint2 --noconfirm
 sudo pacman -S kate --noconfirm
 sudo pacman -S neofetch --noconfirm
 sudo pacman -S screenfetch --noconfirm
+sudo pacman -S lsd --noconfirm
 sudo pacman -S --needed --asdeps git base-devel --noconfirm
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -135,6 +136,7 @@ cd $HOME/villager-os
 rm Meslo.zip
 fc-cache -fv
 
+sudo cp -vvv mirrorlist /etc/pacman.d/mirrorlist
 
 # grub bootloader conf
 
